@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ExpandableLayout">
+        <attr name="el_duration" format="integer" />
+        <attr name="el_expanded" format="boolean" />
+        <attr name="el_parallax" format="float" />
+        <!-- {@deprecated Use el_parallax instead.} -->
+        <attr name="el_translate_children" format="boolean"  />
+        <attr name="layout_expandable" format="boolean" />
+        <attr name="android:orientation"/>
+    </declare-styleable>
+
+    <attr name="color_no_finger_inner_circle" format="color" />
+    <attr name="color_no_finger_outer_circle" format="color" />
+    <attr name="color_finger_on" format="color" />
+    <attr name="color_finger_wrong" format="color" />
+    <attr name="count" format="integer" />
+    <attr name="tryTimes" format="integer" />
+
+    <declare-styleable name="GestureLockViewGroup">
+        <attr name="color_no_finger_inner_circle" />
+        <attr name="color_no_finger_outer_circle" />
+        <attr name="color_finger_on" />
+        <attr name="color_finger_wrong" />
+        <attr name="count" />
+        <attr name="tryTimes" />
+    </declare-styleable>
+    
+    <declare-styleable name="XRefreshView">
+        <attr name="isHeightMatchParent" format="boolean" />
+        <attr name="isWidthMatchParent" format="boolean" />
+        <attr name="autoRefresh" format="boolean" />
+        <attr name="autoLoadMore" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <attr name="cbd_calendar_row" format="integer"/>
+
+    <declare-styleable name="CalendarDateView">
+        <attr name="cbd_calendar_row"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    
+    <TextView
+        android:id="@+id/richang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/padding"
+        android:text="日常"
+        android:textColor="@color/black_text02"
+        android:textSize="17sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+
+    <TextView
+        android:id="@+id/xuexi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/padding"
+        android:text="学习"
+        android:textColor="@color/black_text02"
+        android:textSize="17sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/zhuangxiu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/padding"
+        android:text="装修"
+        android:textColor="@color/black_text02"
+        android:textSize="17sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"/>
+    <TextView
+        android:id="@+id/hunli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/padding"
+        android:text="婚礼"
+        android:textColor="@color/black_text02"
+        android:textSize="17sp"/>
+    
+    
+</LinearLayout>

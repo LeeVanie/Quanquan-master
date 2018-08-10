@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:id="@+id/linear_all">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="15dp">
+
+            <View
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:background="@color/gray_blue"/>
+            
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/black_text01"/>
+
+
+            <View
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:layout_height="0dp"
+                android:background="@color/gray_blue"/>
+
+
+        </LinearLayout>
+        
+     
+        <TextView
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bill_01"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="15dp"/>
+        
+    </LinearLayout>
+    
+</LinearLayout>

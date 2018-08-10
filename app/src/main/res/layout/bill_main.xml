@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/ic_title"/>
+    
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray"
+        android:text="我的账单"
+        style="@style/padding"
+        android:textColor="@color/black_text02"
+        android:textSize="15sp"/>
+    
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/padding"
+        android:divider="@null"/>
+
+    <LinearLayout
+        android:id="@+id/no_datas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/no_datas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~~~这里空空如也~~~"
+            android:textSize="17sp"
+            android:textColor="@color/bule_bg"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,1 @@
+document.addEventListener("WeixinJSBridgeReady",function(){if(window.WeixinJSBridge){var a=WeixinJSBridge.invoke;WeixinJSBridge.invoke=function(){arguments[2]=function(){},a.apply(WeixinJSBridge,arguments)}}});

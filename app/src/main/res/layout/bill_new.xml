@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:id="@+id/all">
+
+    <LinearLayout
+        android:id="@+id/two_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <LinearLayout
+            android:id="@+id/title_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@color/qing">
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                style="@style/padding"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:text="收"/>
+            <LinearLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:orientation="vertical"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/bill_fenlei"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/padding"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:id="@+id/image_selected"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/x2"/>
+
+            <TextView
+                android:id="@+id/text_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black_text01"
+                android:layout_marginLeft="10dp"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="吃喝"/>
+
+            <EditText
+                android:id="@+id/money_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textColor="@color/black_text01"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:digits="0123456789."
+                android:gravity="right"
+                android:hint="0"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/orange01"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray"
+                android:layout_marginTop="15dp"
+                style="@style/padding"
+                android:numColumns="5"
+                android:verticalSpacing="15dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/beizhu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:textSize="15sp"
+                android:textColor="@color/black_text02"
+                style="@style/padding_edit"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp">
+                <Button
+                    android:id="@+id/cancle"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="取消"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:background="@color/orange"/>
+                <Button
+                    android:id="@+id/queding"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="确定"
+                    android:textSize="17sp"
+                    android:textColor="@color/white"
+                    android:background="@color/blue3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

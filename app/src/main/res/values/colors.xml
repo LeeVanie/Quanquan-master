@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#558ef7</color>
+    <color name="colorPrimaryDark">#558ef7</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000</color>
+    <color name="blue_gray">#81b6d4</color>
+    <color name="bg_gray">#00F1F1F1</color>
+    <color name="orange">#daa63d</color>
+    <color name="orange01">#dec490</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="black_text01">#333333</color>
+    <color name="black_text02">#666666</color>
+    <color name="black_text03">#999999</color>
+    <color name="text_color">#ff434343</color>
+    <color name="text_gray">#8D7A71</color>
+    <color name="coffe">#39312d</color>
+    <color name="gray">#f2f2f2</color>
+    <color name="gray01">#dcc4c2c1</color>
+    <color name="transparent">#00000000</color>
+    <color name="cal_line_grey">#cfcdce</color>
+    <color name="tv_balck">#333333</color>
+    <color name="tv_light_balck">#888888</color>
+    <color name="red">#FF0000</color>
+    <color name="red1">#de7777</color>
+    <color name="blue2">#1896E0</color>
+    <color name="blue3">#558ef7</color>
+    <color name="qing">#48D1CC</color>
+    <color name="greed">#008B8B</color>
+    <color name="purple">#8B008B</color>
+    <color name="yellow">#EEEE00</color>
+    <color name="dialog_bg">#55000000</color>
+    <drawable name="transparent">@color/transparent</drawable>
+    <array name="splsh_circle_color">
+        <item>@color/red</item>
+        <item>@color/blue</item>
+        <item>@color/qing</item>
+        <item>@color/greed</item>
+        <item>@color/purple</item>
+        <item>@color/yellow</item>
+    </array>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="white">#ffffffff</color>
+    <color name="gray_white">#333333</color>
+    <color name="dialog_divider">#ffbfcbd3</color>
+    <color name="dialog_listitem_press">#ffd0dce4</color>
+    <color name="gray_blue">#b4e8fe</color>
+    <color name="bule_bg">#00affe</color>
+    <color name="bg_accept_business">#bbfe8d14</color>
+    <color name="bg_business_list">#bb6eda7a</color>
+    <color name="bg_project_hg">#5BC94E</color>
+    <color name="bg_recheck_list">#bbc5bb57</color>
+    <color name="bg_retake_photo">#bb35d4af</color>
+    <color name="bg_change_password">#bb989cea</color>
+    <color name="bg_accept_business_pressed">#bbca83e1</color>
+    <color name="bg_business_list_pressed">#bb70e337</color>
+    <color name="bg_recheck_list_pressed">#bbf1af00</color>
+    <color name="bg_retake_photo_pressed">#bb15e188</color>
+    <color name="bg_change_password_pressed">#bbb082e5</color>
+    <color name="normal_bg">#f1f1f1</color>
+
+    <color name="alpha_05_black">#0D000000</color>
+    <color name="alpha_10_black">#1A000000</color>
+    <color name="alpha_15_black">#26000000</color>
+    <color name="alpha_20_black">#33000000</color>
+    <color name="alpha_25_black">#40000000</color>
+    <color name="alpha_30_black">#4D000000</color>
+    <color name="alpha_35_black">#59000000</color>
+    <color name="alpha_40_black">#66000000</color>
+    <color name="alpha_45_black">#73000000</color>
+    <color name="alpha_50_black">#80000000</color>
+    <color name="alpha_55_black">#8C000000</color>
+    <color name="alpha_60_black">#99000000</color>
+    <color name="alpha_65_black">#A6000000</color>
+    <color name="alpha_70_black">#B3000000</color>
+    <color name="alpha_75_black">#BF000000</color>
+    <color name="alpha_80_black">#CC000000</color>
+    <color name="alpha_85_black">#D9000000</color>
+    <color name="alpha_90_black">#E6000000</color>
+    <color name="alpha_95_black">#F2000000</color>
+    <color name="vehicle_info_text_color">#00AFFF</color>
+
+    <color name="line_c">#a0a0a0</color>
+    <color name="translucence_50">#50000000</color>
+
+    <color name="card_background">#ffffff</color>
+    <color name="card_shadow">#10000000</color>
+    <color name="lite_blue">#ff359ff2</color>
+    <color name="window_background">#00000000</color>
+    <color name="black_de">#DE000000</color>
+    <color name="black_blue">#fd1d2b74</color>
+    
+    <drawable name="white">#ffffff</drawable>
+    <drawable name="greed">#008B8B</drawable>
+    <drawable name="red">#FF0000</drawable>
+    
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#808080</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+
+    <drawable name="black">#000000</drawable>
+    <drawable name="blue">#770000ff</drawable>
+    <drawable name="green">#7700ff00</drawable>
+    <drawable name="yellow">#77ffff00</drawable>
+
+    <drawable name="screen_background_black">#ff000000</drawable>
+    <drawable name="translucent_background">#e0000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+
+    <color name="solid_red">#f00</color>
+    <color name="solid_blue">#0000ff</color>
+    <color name="solid_green">#f0f0</color>
+    <color name="solid_yellow">#ffffff00</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="light_blue">#6593cb</color>
+    <color name="gray02">#5e5e5e</color>
+
+    <color name="color_999999">#999999</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_eeeeee">#eeeeee</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ffffff">#ffffff</color>
+    <color name="color_c61a04">#c61a04</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_d81e06">#d81e06</color>
+    <color name="color_b0b8b2">#b0b8b2</color>
+    <color name="color_28d19d">#28d19d</color>
+    <color name="color_000000">#000000</color>
+    <color name="orange02">#e6e3d5</color>
+
+    <color name="bottom_menu_btn_bg_common_color">#FFFFFF</color>
+    <color name="bottom_menu_btn_bg_press_color">#EEEEEE</color>
+    <color name="bottom_menu_btn_text_commom_color">#5B729A</color>
+    <color name="bottom_menu_btn_text_press_colot">#3F51B5</color>
+    <color name="bottom_menu_btn_text_stress_color">#FF0000</color>
+    <color name="bottom_menu_layout_color">#00000000</color>
+
+</resources>

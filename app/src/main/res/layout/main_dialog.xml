@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:gravity="center"
+    android:background="@drawable/edit_stork_gray">
+
+    <TextView
+        android:id="@+id/text"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="语音助手"
+        android:textColor="@color/black_text02"
+        android:textSize="15sp"/>
+    
+    
+</LinearLayout>

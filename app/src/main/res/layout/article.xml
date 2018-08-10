@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/main_content">
+
+    <include
+        layout="@layout/title_more"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/rjb07">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideOverlay"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:id="@+id/htmlTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textIsSelectable="true"
+                    android:clickable="true"
+                    android:textSize="16.5sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="onHtmlClick"
+                    android:textColor="@color/black_text01"
+                    android:lineSpacingMultiplier="1.2"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

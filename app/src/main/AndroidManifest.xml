@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.lee.ttest"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/no"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.WelcomeActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".activity.RegisterActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        
+        <activity android:name=".activity.MainActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        
+        <activity android:name=".activity.LoginActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <activity android:name=".activity.set.PhotoActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+
+        <activity android:name=".activity.set.LockActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.set.LockOnActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.set.ChangePSDActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".activity.set.LockOffActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity android:name=".activity.set.SetttingActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.jsb.RjbActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.jsb.RjbAddActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.bill.BillNew"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.bill.BillMain"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.bill.BillSelectedType"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.bill.BillDetails"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.bill.BillRemark"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.food.FoodListActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.food.FoodActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.food.FoodWebViewActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.food.FoodDetailsActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.lssdjt.HistoryActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.lssdjt.HistoryDetailsActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.BsbdjListActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.BsbdjImageActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.BjNewActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.BjnewDetailsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.ArticalActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <activity android:name=".activity.BrowserActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".activity.WebViewActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+                  android:screenOrientation="landscape"/>
+        <activity android:name=".activity.WebViewActivity2"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.QsylActivity"
+                  android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".activity.BjSreachActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize|stateAlwaysHidden"/>
+        <!---->
+        <!--百度定位-->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dp6dMz3AmaHeVcolN7dLXor5xUPhCz1n" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+        <service android:name=".service.LocationService"
+                 android:enabled="true"
+                 android:exported="true">
+            <intent-filter>
+                <action android:name="com.lee.ttest.service.LocationService"/>
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lee.ttest.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

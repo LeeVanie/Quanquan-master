@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <LinearLayout
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="20dp"
+        android:background="@color/blue3">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actbar_home_up_indicator_white_normal"/>
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="美食分类"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+        
+        <TextView
+            android:id="@+id/sreach_btn"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:tabMode="scrollable"
+        app:tabSelectedTextColor="@android:color/holo_orange_light"
+        app:tabTextColor="@color/colorPrimary"
+        app:tabTextAppearance="@android:style/TextAppearance.Holo.Small"
+        app:tabIndicatorHeight="4dp">
+    </android.support.design.widget.TabLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

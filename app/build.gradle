@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.1"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    
+    defaultConfig {
+        applicationId "com.lee.ttest"
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        
+        multiDexEnabled true
+
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    greendao {
+        schemaVersion 1
+        targetGenDir 'src/main/java'
+    }
+    sourceSets { 
+        main {
+            jniLibs.srcDirs = ['libs']
+            assets.srcDirs = ['src/main/assets', 'src/main/assets/fonts'] 
+        } 
+    }
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:support-annotations:23.3.0'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.facebook.fresco:fresco:0.14.1'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    apt 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/universal-image-loader-1.9.0.jar')
+    compile files('libs/jsoup-1.8.1.jar')
+    compile project(':multi-image-selector')
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'org.greenrobot:greendao:3.2.0'
+    compile 'com.contrarywind:Android-PickerView:3.2.4'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.alibaba:fastjson:1.2.36'
+    compile files('libs/httpmime-4.1.2.jar')
+    compile 'com.commit451:NativeStackBlur:1.0.2'
+    compile 'com.cjj.materialrefeshlayout:library:1.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':nicevideoplayer')
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'org.litepal.android:core:1.4.1'
+    compile files('libs/hellocharts-library-1.5.8.jar')
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+}

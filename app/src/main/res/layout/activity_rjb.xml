@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/ic_title"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/gray"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10篇"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/datas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            style="@style/padding"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/no_datas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/no_datas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~~~这里空空如也~~~"
+            android:textSize="17sp"
+            android:textColor="@color/bule_bg"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

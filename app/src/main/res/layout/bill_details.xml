@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/ic_title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@color/orange"
+                    style="@style/padding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="收入"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/shou_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:paddingRight="50dp"
+                        android:text="+0.00元"
+                        android:textSize="25sp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@color/red1"
+                    style="@style/padding"
+                    android:gravity="right">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="支出"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:id="@+id/chu_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="-0.00元"
+                        android:textSize="25sp"
+                        android:paddingLeft="50dp"
+                        android:textColor="@color/white"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.lee.ttest.widget.MyScrollView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.lee.ttest.widget.MyListView
+                            android:id="@+id/shou_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@color/orange"
+                            android:dividerHeight="1dp"
+                            android:paddingTop="50dp"/>
+                    </LinearLayout>
+                </com.lee.ttest.widget.MyScrollView>
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray01"/>
+                <com.lee.ttest.widget.MyScrollView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <com.lee.ttest.widget.MyListView
+                            android:id="@+id/chu_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:divider="@color/red1"
+                            android:dividerHeight="1dp"
+                            android:paddingTop="50dp"/>
+                    </LinearLayout>
+                </com.lee.ttest.widget.MyScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:orientation="vertical"
+        android:gravity="bottom|center">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:background="@mipmap/qing_bg"
+            style="@style/padding"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计"
+                android:textSize="15sp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/total_money"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+0.00元"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

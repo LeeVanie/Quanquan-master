@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        style="@style/padding"
+        android:paddingTop="40dp"
+        android:background="@color/blue3">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="添加备注"
+            android:textColor="@color/white"
+            android:textSize="17sp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/ic_cha"
+            android:padding="5dp"/>
+        
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@null"
+        android:hint="......"
+        android:gravity="top"
+        android:textSize="15sp"
+        style="@style/padding"
+        android:textColor="@color/black_text02"/>
+    
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        style="@style/padding"
+        android:background="@color/gray">
+        
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@mipmap/ic_location"/>
+
+        <TextView
+            android:id="@+id/location_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black_text02"
+            android:textSize="17sp"/>
+        
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            style="@style/padding"/>
+        
+    </LinearLayout>
+    
+    
+    
+</LinearLayout>

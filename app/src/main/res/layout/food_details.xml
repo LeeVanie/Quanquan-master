@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lee.ttest.widget.MyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout 
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+        android:id="@+id/main_content">
+
+        <include
+            layout="@layout/title"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+            <com.facebook.drawee.view.SimpleDraweeView
+                xmlns:fresco="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                fresco:placeholderImage="@drawable/loading_placeholder"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:fadeDuration="1000"
+                android:id="@+id/food_image"/>
+
+            <TextView
+                android:id="@+id/food_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:textSize="20sp"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray02"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text=""
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/title_shicai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:text="食材明细"
+                android:layout_marginTop="20dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray01"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:id="@+id/shicai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/title_buzhou"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:text=""
+                android:layout_marginTop="20dp"/>
+            
+            <LinearLayout
+                android:id="@+id/buzhou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:textSize="17sp"
+                android:text="温馨小提示"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/content_tishi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/coffe"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:text=""
+                android:layout_marginTop="20dp"/>
+            
+        </LinearLayout>
+
+    </LinearLayout>
+</com.lee.ttest.widget.MyScrollView>

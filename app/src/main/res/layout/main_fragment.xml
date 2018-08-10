@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/rjb04">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/weather_bg"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/wendu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="30℃"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black_blue"
+            android:textSize="40sp"
+            android:gravity="right"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|right"
+            android:layout_alignParentBottom="true">
+
+
+            <ImageView
+                android:id="@+id/tianqi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/tianqidesc"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="--"
+                android:textSize="17sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/alpha_50_black"/>
+
+            <TextView
+                android:id="@+id/fengli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2级"
+                android:textSize="17sp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/alpha_50_black"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rjb04"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:numColumns="2"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="15dp"
+        android:scrollbars="none"/>
+
+</LinearLayout>

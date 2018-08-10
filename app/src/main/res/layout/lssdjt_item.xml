@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+    android:background="@drawable/lssdjt_bg"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/coffe"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:text=""
+        android:layout_marginTop="10dp"/>
+    
+    <com.facebook.drawee.view.SimpleDraweeView
+        xmlns:fresco="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        fresco:placeholderImage="@drawable/loading_placeholder"
+        fresco:placeholderImageScaleType="centerCrop"
+        fresco:viewAspectRatio="1.33"
+        fresco:fadeDuration="1000"
+        android:id="@+id/imageview"/>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black_text01"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:text=""
+        android:layout_marginTop="10dp"/>
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text02"
+            android:gravity="left"
+            android:textSize="15sp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/lunar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black_text02"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:text=""/>
+    </LinearLayout>
+    
+</LinearLayout>
