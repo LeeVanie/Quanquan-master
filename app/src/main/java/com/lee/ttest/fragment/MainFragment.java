@@ -66,8 +66,10 @@ public class MainFragment extends BaseFragment implements MainFragmentView {
     @Override
     protected void initViews() {
         MainFragmentPresenter presenter = new MainFragmentPresenterImpl(this);
-        presenter.setDatas(getActivity(), LocationAddress.getInstence().getAddress()[2].substring(0, 6) + "," +
-                LocationAddress.getInstence().getAddress()[1].substring(0, 6));
+        if (null != LocationAddress.getInstence().getAddress()) {
+            presenter.setDatas(getActivity(), LocationAddress.getInstence().getAddress()[2].substring(0, 6) + "," + LocationAddress.getInstence().getAddress()[1].substring(0, 6));
+            
+        }
     }
 
     @Override

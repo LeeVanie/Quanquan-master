@@ -24,6 +24,7 @@ import com.lee.ttest.mvp.presenter.BjTypePresenter;
 import com.lee.ttest.mvp.presenter.BjTypePresenterImpl;
 import com.lee.ttest.mvp.view.BjTypeView;
 import com.lee.ttest.utils.ToastUtils;
+import com.lee.ttest.widget.GifLoadingView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,7 +52,7 @@ public class BjNewActivity extends BaseActivity implements BjTypeView {
     LinearLayout main;
     
     private BjnewFragmentAdapter mBjnewFragmentAdapter;
-    
+    private GifLoadingView mGifLoadingView;
     @Override
     protected void initEventAndData() {
         back.setOnClickListener(new View.OnClickListener() {
@@ -71,6 +72,10 @@ public class BjNewActivity extends BaseActivity implements BjTypeView {
     @Override
     protected void initInjecter() {
         title.setText("百家播报");
+
+        mGifLoadingView = new GifLoadingView((ViewGroup) findViewById(R.id.main).getRootView(), 
+                this, "正在为您加载....");
+        mGifLoadingView.show();
         BjTypePresenter presenter = new BjTypePresenterImpl(this);
         presenter.setDatas(this);
     }
@@ -89,6 +94,7 @@ public class BjNewActivity extends BaseActivity implements BjTypeView {
 
     @Override
     public void showDatas(BjTypeBean.ResultBean bean) {
+        mGifLoadingView.dismiss();
         if (bean.getResult().size() > 0) {
             mBjnewFragmentAdapter = new BjnewFragmentAdapter(this.getSupportFragmentManager(), bean);
             viewpager.setAdapter(mBjnewFragmentAdapter);
@@ -98,6 +104,7 @@ public class BjNewActivity extends BaseActivity implements BjTypeView {
 
     @Override
     public void showFailed() {
+        mGifLoadingView.dismiss();
         ToastUtils.showToast(this, "网络错误");
     }
 
@@ -114,12 +121,12 @@ public class BjNewActivity extends BaseActivity implements BjTypeView {
         ImageView sreach = (ImageView) popupView.findViewById(R.id.sreach);
         TextView clear = (TextView) popupView.findViewById(R.id.clear);
         ListView listview = (ListView) popupView.findViewById(R.id.listview);
-        window = new PopupWindow(popupView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        window = new PopupWindow(popupView, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         window.setBackgroundDrawable(new BitmapDrawable());
         window.setFocusable(true);
         window.setOutsideTouchable(true);
         window.update();
-        window.showAtLocation(main, Gravity.CENTER, 0, 0);
+        window.showAtLocation(main, Gravity.CENTER_HORIZONTAL, 0, 0);
         window.setTouchInterceptor(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {

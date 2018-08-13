@@ -12,6 +12,7 @@ import com.facebook.drawee.view.SimpleDraweeView;
 import com.lee.ttest.R;
 import com.lee.ttest.bean.BjSreachBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -30,7 +31,9 @@ public class BjSreachAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     private Context mContext;
 
     public void setListBeans(List<BjSreachBean.ResultBeanX.ResultBean.ListBean> listBeans) {
+        mListBeans = new ArrayList<>();
         mListBeans = listBeans;
+        notifyDataSetChanged();
     }
 
     private List<BjSreachBean.ResultBeanX.ResultBean.ListBean> mListBeans;
@@ -61,7 +64,7 @@ public class BjSreachAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
     }
 
     @Override
-    public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
+    public void onBindViewHolder(RecyclerView.ViewHolder holder, final int position) {
         if (holder instanceof ViewHolder) {
             ViewHolder viewHolder = (ViewHolder) holder;
             final BjSreachBean.ResultBeanX.ResultBean.ListBean bean = mListBeans.get(position);
@@ -72,6 +75,14 @@ public class BjSreachAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
             viewHolder.title02.setText(bean.getTitle());
             viewHolder.author02.setText(bean.getSrc());
             viewHolder.time02.setText(bean.getTime());
+            viewHolder.style02.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (mOnItemClickListener != null) {
+                        mOnItemClickListener.OnItemClick(v, position, bean);
+                    }
+                }
+            });
 
         }
     }

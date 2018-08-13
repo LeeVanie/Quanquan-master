@@ -172,6 +172,7 @@ public class BjNewFragment extends BaseFragment implements BjnewListView, PullTo
                 Intent intent = new Intent(getActivity(), BjnewDetailsActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("BjNewListBean", dataBean);
+                bundle.putString("FLAG", "new");
                 intent.putExtras(bundle);
                 startActivity(intent);
             }

@@ -73,12 +73,14 @@ public class BjSreachActivity extends BaseActivity implements BjnewSreachView {
                 Intent intent = new Intent(BjSreachActivity.this, BjnewDetailsActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putSerializable("BjNewListBean", bean);
+                bundle.putString("FLAG", "sreach");
                 intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
         mGifLoadingView = new GifLoadingView((ViewGroup) findViewById(R.id.main_content).getRootView(), this,
                 "正在加载中......");
+        mGifLoadingView.show();
         mPresenter = new BjnewSreachPresenterImpl(this);
         
         mPresenter.setDatas(this, getIntent().getStringExtra("KEY"));
